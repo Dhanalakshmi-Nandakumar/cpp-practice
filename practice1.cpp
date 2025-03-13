@@ -20,9 +20,6 @@ int sumofFactors(int n)
 			count++;
 
 			n = n / i;
-
-			// here we remove the 2^0 that is 1. All
-			// other factors
 			if (i == 2 && count == 1)
 				curr_sum = 0;
 
