@@ -7,7 +7,12 @@ int main() {
     cout<<"Enter a number  ";
     cin>>num;
     int temp=num;
-    if(num%2==0) //32
+    if(num==0)
+    {
+         cout<<"number is not power of 2  ";
+         return 0;
+    }
+   else if(num%2==0) //32
     {
         
         while(temp>1) //true
