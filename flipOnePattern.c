@@ -1,6 +1,6 @@
 #include <stdio.h>
-int main() {
-    //Your Code goes here!
+
+ //Your Code goes here!
     //1
     //0 1
     //1 0 1
@@ -20,16 +20,18 @@ int main() {
           else{
             start=0;
           }
-          for(int col=0;col<=row;col++) //1<=2
+          for(int col=0;col<=row;col++) //<=2
           {
             printf("%d ",start); //1
-            start=1-start; //0
+            start=1-start; //1
            
 
           }
           printf("\n");
        }
     }
+    
+int main() {
      int t;
     scanf("%d",&t);
     for(int i=1;i<=t;i++)
