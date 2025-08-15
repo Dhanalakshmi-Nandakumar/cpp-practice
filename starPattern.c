@@ -16,21 +16,22 @@ void starPattern(int n)
 //    ***    row 2--> 1--3   4 4-2-2 
 //   *****   row 3--> 2   5
 //  *******  row 4--> 3   7
-     for(int row=0;row<n;row++)
-     {
-        for(int gap=0;gap<n-row;gap++)
-        {
-            printf(" ");
-        }
-        for(int col=0;col<col+row+1;col++)
-        {
-            printf("*");
-        }
-        for(int gap=0;gap<n-row;gap++)
-        {
-            printf(" ");
-        }
-     }
+      for(int row=1;row<=n;row++) //4
+    {
+        for(int gap=1;gap<=n-row;gap++) //1<=4-1 2<=3
+    {
+         printf(" ");  // gap gap gap 
+            }
+       for(int col=1;col<=row*2-1;col++) //1< =1
+    {
+           printf("*");
+    } 
+   for(int gap=1;gap<=n-row;gap++)
+    {
+        printf(" ");
+    }
+    printf("\n");
+    }
 }
 int main() {
     //Your Code goes here!     
