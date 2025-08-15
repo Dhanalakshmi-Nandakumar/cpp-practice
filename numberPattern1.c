@@ -26,10 +26,28 @@ void numberPattern(int n)
    printf("\n");
    }
 }
-
+void numberPattern2(int n)
+{
+   //Your Code goes here!
+    //1
+    //2 3
+    //3 4 5
+    //6  7  8  9 
+    //10 11 12 13 14
+    int num=1;
+    for(int row=1;row<=n;row++)
+    { 
+      for(int col=1;col<=row;col++)//0<=3
+    {
+            printf("%d ",num);
+            num+=1;
+    }
+    printf("\n");  
+    }
+}
   
 int main() {
-    //Your Code goes here!
+ 
      int t;
     scanf("%d",&t);
     for(int i=1;i<=t;i++)
@@ -37,7 +55,7 @@ int main() {
          int n;
          printf("Enter number ");
          scanf("%d",&n);
-         numberPattern(n);
+         numberPattern2(n);
          
     }
     
