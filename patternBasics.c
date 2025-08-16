@@ -125,11 +125,7 @@ void rightAngleReverseWithGap(int n)
 }
 void halfDiamondReverse(int n)
 {
-    // 8.  *
-    //    ***
-    //   *****
-    //  *******
-    // *********
+    
 
    for(int row=n;row>=1;row--)
    {
@@ -168,6 +164,77 @@ void halfDiamond(int n)
    }
 }
 
+void diamondWithGap(int n)
+{
+    // 10.  *
+    //     * *
+    //    * * *
+    //   * * * *
+    //  * * * * *
+    for(int row=1;row<=n;row++)
+    {
+        for(int space=1;space<=n-row;space++)
+    {
+        printf(" ");
+    }
+    for(int col=1;col<=row;col++)
+    {
+       printf("* ");  
+    }
+    printf("\n");
+    
+    }
+}
+void diamondReverseWithGap(int n)
+{
+    //  * * * * *
+    //   * * * *
+    //    * * *
+    //     * *
+    //      *
+    for(int row=n;row>=1;row--)
+        {
+        for(int space=1;space<=n-row;space++)
+    {
+        printf(" ");
+    }
+    for(int col=1;col<=row;col++)
+    {
+       printf("* ");  
+    }
+    printf("\n");
+    
+    }
+}
+// void realDiamond(int n)
+// {
+//     // 10.  *
+//     //     * *
+//     //    *   *
+//     //   *     *
+//     //  *********       
+//     for(int row=1;row<=n;row++)
+//     {
+//         for(int space=1;space<=n-row;space++)
+//     {
+//         printf(" ");
+//     }
+//     for(int col=1;col<=1;col++)
+//     {
+//        printf("*");
+//         for(int space=0;space<2*n-1;space++)
+//     {
+//         printf(" ");
+//     }
+//     printf("*");
+        
+//     }
+//     printf("\n");
+    
+//     }
+// }
+
+
 int main() {
     //Your Code goes here!
 
@@ -184,8 +251,13 @@ int main() {
          //halfRightAngle(n);
         //  rightAngleWithGap(n);
         //  rightAngleReverseWithGap(n);
-        halfDiamond(n);
-        halfDiamondReverse(n);
+        // halfDiamond(n);
+        // halfDiamondReverse(n);
+        
+        // diamondReverseWithGap(n);
+        // diamondWithGap(n);
+        //realDiamond(n);
+
     }  
 
     return 0;
