@@ -358,23 +358,23 @@ int main() {
          int n;
          printf("Enter number ");
          scanf("%d",&n);
-        //   halfDiamondReverse(n);
-        //  rightAngle(n);
-        //  rightAngleReverse(n);
-        //  rightAngleReverseWithNumber(n);
-        //  rightAngleNumber(n);
-        //  halfRightAngle(n);
-        //  rightAngleWithGap(n);
-        //  rightAngleReverseWithGap(n);
-        // halfDiamond(n);
+          halfDiamondReverse(n);
+         rightAngle(n);
+         rightAngleReverse(n);
+         rightAngleReverseWithNumber(n);
+         rightAngleNumber(n);
+         halfRightAngle(n);
+         rightAngleWithGap(n);
+         rightAngleReverseWithGap(n);
+        halfDiamond(n);
        
         
-        // diamondReverseWithGap(n);
-        // diamondWithGap(n);
+        diamondReverseWithGap(n);
+        diamondWithGap(n);
         realDiamond(n);
-        // numberPattern(n);
-        // numberFlipPattern1(n);
-        // rightAngleReverseWithNumber2(n);
+        numberPattern(n);
+        numberFlipPattern1(n);
+        rightAngleReverseWithNumber2(n);
 
     }  
 
