@@ -11,7 +11,9 @@ int main() {
     stk.push(350);
     stk.push(330);
     stk.push(310);
-
+   cout<<"top element"<<stk.top()<<endl;
+    
+   stk.insert()
     // loop until stack is empty
     while (!stk.empty()) {
         cout << stk.top() << endl;
