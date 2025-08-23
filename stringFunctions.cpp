@@ -32,8 +32,26 @@ int main() {
     cout << "After pop_back: " << str << endl;
 
     // insert()
-    str.insert(5, "):");
-    cout << "After insert: " << str << endl;
+    str.insert(6, "s");
+    string str1="1234567890";
+    str1.insert(3,"8");
+    cout << "After insert: " << str1 << endl;
+     cout << "After insert: " << str << endl;
+    //erase number  element
+    cout << "before erase: " << str1 << endl;
+    cout<<str1.erase(2,2)<<endl;
+    cout << "After erase: " << str1 << endl;
+     cout << "Erase: from 2nd index to 4th index" << str.erase(2,4) << endl;
+      cout << "Erase: from 2nd index to last index" << str.erase(2) << endl;
+      //cout << "After erasing all element " << str.erase() << endl;
+      cout<<"trying to print the str"<<str<<endl;
+
+      //Replace element
+     // str1.replace(2,8," dhanalakshmi love c program");
+       str1.replace(2,4," dhanalakshmi love c program");
+      cout<<str1;
+
+   
 
     return 0;
 }
