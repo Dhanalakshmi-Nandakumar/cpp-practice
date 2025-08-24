@@ -67,11 +67,12 @@ string str2="apple",str3="apple";
 cout<<"comparing two string "<<str3.compare(str2)<<endl;
 
 //clear --note clear() does not return anything since it datatype is void
-cout<<"before using clear() "<<str2<<endl<<str3<<endl;
-str2.clear();
-str3.clear();
+// cout<<"before using clear() "<<str2<<endl<<str3<<endl;
+// str2.clear();
+// str3.clear();
 
  cout<<"after using clear() value becomes empty "<<str2<<endl<<str3;  
+ cout<<endl<<str2.substr(3);
 
     return 0;
 }
