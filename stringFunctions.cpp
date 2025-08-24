@@ -41,8 +41,8 @@ int main() {
     cout << "before erase: " << str1 << endl;
     cout<<str1.erase(2,2)<<endl;
     cout << "After erase: " << str1 << endl;
-     cout << "Erase: from 2nd index to 4th index" << str.erase(2,4) << endl;
-      cout << "Erase: from 2nd index to last index" << str.erase(2) << endl;
+     //cout << "Erase: from 2nd index to 4th index" << str.erase(2,4) << endl;
+      //cout << "Erase: from 2nd index to last index" << str.erase(2) << endl;
       //cout << "After erasing all element " << str.erase() << endl;
       cout<<"trying to print the str"<<str<<endl;
 
@@ -50,8 +50,28 @@ int main() {
      // str1.replace(2,8," dhanalakshmi love c program");
        str1.replace(2,4," dhanalakshmi love c program");
       cout<<str1;
+cout<<str.replace(3,str.size()-1,"learn,code,practice")<<endl;
 
-   
+//substr
+cout<<str.substr(2,15)<<endl;
+//find-->give first p index
+cout<<str<<endl;
+cout<<str.find("p")<<endl;
+//rfind-->give last o index
+cout<<str<<endl;
+cout<<str.rfind("o")<<endl;
+//compare
+string str2="apple",str3="apple";
+
+//cout<<"comparing two string"<<str3.compare(str2);
+cout<<"comparing two string "<<str3.compare(str2)<<endl;
+
+//clear --note clear() does not return anything since it datatype is void
+cout<<"before using clear() "<<str2<<endl<<str3<<endl;
+str2.clear();
+str3.clear();
+
+ cout<<"after using clear() value becomes empty "<<str2<<endl<<str3;  
 
     return 0;
 }
