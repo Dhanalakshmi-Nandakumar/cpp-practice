@@ -10,7 +10,11 @@ int main() {
     q1.push(3);
     q1.push(4);
     q1.push(5);
-    
+    //pop element does not return anything to print popped eleemnt we can use front()
+    //void pop();
+
+    cout<<"popping element "<<q1.front()<<endl;
+    q1.pop();
     // Create another queue from q1
     queue<int> q2(q1);
     
