@@ -7,15 +7,19 @@ class Rectangle
     int length;
     int breadth;
     public:
-    Rectangle()//constructor
+    Rectangle()//default constructor
     {
         length=breadth=0;
     }
     Rectangle (int l,int b);//constructor overloading
     int area();
-    int perimeter();
+    int perimeter();//function declaration
     int getLength();
-    int setLength(int l);
+    void setLength(int l);
+    ~Rectangle() //destructor
+    {
+        cout<<"Destructor is called when the program end ): ";
+    }
 };
 Rectangle::Rectangle(int l,int b)
 {
@@ -24,7 +28,7 @@ Rectangle::Rectangle(int l,int b)
         breadth=b;
     
 }
-int Rectangle::area()
+int Rectangle::area()    //function definition   syntax-->    return_type class_name :: function_name{}
 {
     return length*breadth;
 }
@@ -32,14 +36,15 @@ int Rectangle::perimeter()
 {
     return 2*(length+breadth);
 }
-int Rectangle::getLength()
+int Rectangle::getLength() //Accessor function used to read private data of class but it did not modify data
 {
-    return length;
+    return length; //only return value
 }
-int Rectangle::setLength(int l)
-{
-  length=l;
-  return length;
+void Rectangle::setLength(int l)//mutator function used to modify the private data of class
+{ 
+  length=l; //changing length
+  cout<<"setting the length "<<length<<endl;
+
 }
 
 int main() {
@@ -48,6 +53,8 @@ int main() {
     cout<<"Area of rectangle is  "<<r.area()<<endl;
      cout<<"Area of perimeter is  "<<r.perimeter()<<endl;
      cout<<"Retuning the length "<<r.getLength()<<endl;
-     cout<<"Setting the length "<<r.setLength(88);
+     r.setLength(88);
+     //cout<<"Setting the length is "<<r.length;  //cannot access data directly 
+
     return 0;
 }
