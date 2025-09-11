@@ -2,9 +2,11 @@
 using namespace std;
 int fun(int n)
 {
-    static int x=0; //static scope only one instance is created , note x is not created for every function call
+     int x=0; //local scope-For every call one instance is created , note x is  created for every function call which means x bcome 0 
+     
     if(n>0)
     {
+        
         ++x;
         return fun(n-1)+x;
     }

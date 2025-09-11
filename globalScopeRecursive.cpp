@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
+int x=0;//global scope only one instance is created , note x is not created for every function call
 int fun(int n)
 {
-    static int x=0; //static scope only one instance is created , note x is not created for every function call
+      
     if(n>0)
     {
+        
         ++x;
         return fun(n-1)+x;
     }
