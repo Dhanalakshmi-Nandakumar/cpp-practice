@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    //Reversing the string 
+    //Reversing the string using temp variable and array variable
     char word[20];
     cin.getline(word,20);
     char copy[20];
