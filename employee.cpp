@@ -9,6 +9,9 @@ class Employee
    string shift_type;
    int salary;
   public:
+  ~Employee(){
+   cout<<"\n destructor called from base !\n "<<endl;
+  } 
   Employee(int emp_id=0,string name="", string role="",string shift_type="",int salary=0)
   {
      setEmpid(emp_id);
@@ -44,15 +47,15 @@ class Employee
   {
      return emp_id;
   }
-  void display_empDetails(string shift_type)
+  void display_empDetails(string shift)
   {
-    if(this->shift_type=="part time")
+    if(shift=="part time")
     {
-       cout<<"Employee name is "<<name
-       <<"\nEmp id is "<<emp_id
+       cout<<"\nEmp id is "<<emp_id
+       <<"\nEmployee name is "<<name
        <<"\nDesignation is "<<role
        <<"\nShift type is  "<<shift_type
-       <<"\nSalary is  "<<salary;
+       <<"\nSalary is "<<salary;
 
     }
   }
@@ -64,6 +67,9 @@ class FulltimeEmployee:public Employee
 class PartTimeEmployee:public Employee
 {
    public:
+   ~PartTimeEmployee(){
+      cout<<"\n destructor called from derived !\n "<<endl;
+   }
    PartTimeEmployee(int emp_id, string name, string role, string shift_type, int salary)
         : Employee(emp_id, name, role, shift_type, salary) // call base class constructor
     {
