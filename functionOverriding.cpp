@@ -12,13 +12,13 @@ class parent
 class child:public parent
 {
  public:
- void display() //parent class is override  by child class with some changes
+ void display(int x) //parent class is override  by child class with some changes
  {
     cout<<"im Child class";
  }  
 };
 int main() {
     child c;
-    c.display();
+    c.parent::display();//explicitly saying i need parent class 
     return 0;
 }
