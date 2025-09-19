@@ -6,12 +6,13 @@ int main() {
     try
     {
         int *ptr=new int[2000000000000];
+        throw bad_alloc();
 
     }
-    catch(exception e)
+    catch(const exception& e)
     {
-        cerr<<"memory allocation failed "<<e.what();
+        cerr<<"\nmemory allocation failed "<<e.what();
     }
-   cout<<"program end...";
+   cout<<"\nprogram end...";
     return 0;
 }
